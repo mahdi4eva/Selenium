@@ -14,5 +14,6 @@ public class BlazeLoginTest extends BlazeTestBase{
         BlazeLoginPage loginPage = new BlazeLoginPage(driver);
         loginPage.login();
         blazeMainPage.headerInformation("Welcome");
+        System.out.println("Test");
     }
 }

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Regression Suite]">
+  <test thread-count="5" name="Bank Test(failed)">
+    <classes>
+      <class name="com.qa.Bank.tests.BankLoginTest">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="validateLoginInformation"/>
+        </methods>
+      </class> <!-- com.qa.Bank.tests.BankLoginTest -->
+      <class name="com.qa.Bank.tests.BankManagerTest">
+        <methods>
+          <include name="validateCustomersFunctionality"/>
+          <include name="validateOpenAccountFunctionality"/>
+          <include name="validateAddCustomerFunctionalityParameter"/>
+          <include name="validateAddCustomerFunctionality"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.qa.Bank.tests.BankManagerTest -->
+      <class name="com.qa.Bank.tests.BankCustomerLoginTest">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="validateCustomerTransaction"/>
+        </methods>
+      </class> <!-- com.qa.Bank.tests.BankCustomerLoginTest -->
+    </classes>
+  </test> <!-- Bank Test(failed) -->
+</suite> <!-- Failed suite [Regression Suite] -->
